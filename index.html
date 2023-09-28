@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Secret Code</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="https://kit.fontawesome.com/e17dd9a5fd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <h1 class="text-2">AKASH PORTFOLIO</h1>
+    <div class="container">
+    <h1 class="text-1">Welcome</h1>
+    <input type="text" id="secretCodeInput" placeholder="Enter Secret Code">
+    <button onclick="checkSecretCode()">Submit</button>
+    </div>
+<div>
+  
+    <div class="text-3">
+        <h1 class="text-4">Contact </h1>
+        <h1 class="text-5">9520007179</h1>
+    </div>
+    </div>
+    <div class="footer">
+        <span>Created By AKASH SAHU <span class="far fa-copyright"></span> 2023 All rights reserved.</span>
+    </div>
+    <script>
+        function checkSecretCode() {
+            const enteredCode = document.getElementById('secretCodeInput').value;
+            const secretCode = 'Akash'; // Replace with your secret code
+
+            if (enteredCode === secretCode) {
+                window.location.href = 'secret.html'; // Redirect to the secret page
+            } else {
+                alert('Invalid code. Please try again.');
+            }
+        }
+    </script>
+</body>
+</html>
+
+
